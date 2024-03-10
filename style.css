@@ -1,7 +1,7 @@
 /* Estilos para o aplicativo de música */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(to bottom, #f9f9f9, #e6e6e6);
+    background: linear-gradient(to bottom, #FFFBFE, #e6e6e6);
     margin: 0;
     padding: 0;
 }
@@ -69,5 +69,24 @@ li:hover {
     to {
         opacity: 1;
         transform: translateY(0);
+    }
+}
+
+#dance-animation {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#dance-animation img {
+    max-width: 200px;
+    animation: dance 1s infinite alternate;
+}
+
+@keyframes dance {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-10px);
     }
 }
